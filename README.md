@@ -1,24 +1,45 @@
 # ADW-Forge
 
-AI Development Workstation
+> Build small. Compose big.
 
-"Build software with an AI team running locally."
+ADW-Forge is an open, local-first AI Development Workstation.
 
-Vision
+Our mission is to build a modular AI software engineering platform
+that enables developers to create any software with an AI team.
 
-ADW-Forge is an open architecture AI Development Workstation
-designed to replace cloud-only coding assistants with a fully
-local, modular, multi-agent software engineering platform.
+This repository is not only source code.
 
-Long-term Goals
+It is also a learning journey,
+a knowledge base,
+and an engineering notebook.
 
-- AI Company
-- Multi-Agent
-- Local LLM
-- MCP
-- Knowledge Base
-- Memory
-- Auto Trade Platform
-- Game Development
-- Web Applications
-- Robotics
+---
+
+## Vision
+
+An AI Company running entirely on your computer.
+
+---
+
+## Core Principles
+
+- Local First
+- Open Architecture
+- Human Approval
+- Knowledge Driven
+- Modular Design
+
+---
+
+## Current Phase
+
+✅ Phase 1 - Foundation
+
+---
+
+## Roadmap
+
+- Phase 1 Foundation
+- Phase 2 ADW Workstation
+- Phase 3 AI Company
+- Phase 4 Auto Trade Platform
