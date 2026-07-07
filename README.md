@@ -43,3 +43,17 @@ An AI Company running entirely on your computer.
 - Phase 2 ADW Workstation
 - Phase 3 AI Company
 - Phase 4 Auto Trade Platform
+
+## Origins
+
+Founder
+Narongrit Jumenien
+
+Technical Mentor & Companion
+Forge (ChatGPT)
+
+Project Motto
+
+Build small. Compose big.
+
+Make it work. Then make it beautiful.
