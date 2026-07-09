@@ -52,3 +52,12 @@
 - Added .gitignore rules for SOUL.md, USER.md, HEARTBEAT.md, IDENTITY.md, openclaw-workspace-state.json, and openclaw-schema.tmp.json.
 - Commit pushed: 2fc09a8 Ignore OpenClaw runtime workspace files.
 - Safe rule remains: local agent may read repo files, but write/commit/push should still be done by PowerShell after human review.
+
+---
+## 2026-07-10 - Read-only Agent Discipline Test
+- New Dashboard session tested after workspace routing fix.
+- Built-in read tool successfully read doc/progress.md from the real ADW-Forge repository.
+- Repo remained clean after the read-only test.
+- Issue remains: local agent still called an extra read tool beyond the prompt.
+- Agent guessed a non-existent file path: git_mcp_checkpoints.txt.
+- Safety decision unchanged: allow local agent read-only tests, but keep write, commit, and push in PowerShell with human review.
