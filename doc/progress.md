@@ -41,3 +41,14 @@
 - Issue found: local agent read/write tools still resolve paths under C:\Users\YiCD\.openclaw\workspace instead of the real ADW-Forge repo.
 - Safety decision: do not allow local agent write/create/commit actions until filesystem routing is fixed or verified.
 - Continue safe workflow using PowerShell for real repo verification and Git operations.
+
+---
+## 2026-07-10 - OpenClaw Workspace Routing Checkpoint
+- agents.defaults.workspace set to E:\Ai-Project\Projects\ADW-Forge.
+- Gateway restarted and workspace routing verified.
+- Built-in read tool can now read doc/progress.md from the real ADW-Forge repository.
+- Issue remains: local agent may still call extra tools beyond the prompt.
+- OpenClaw runtime/bootstrap files may appear in the repo workspace.
+- Added .gitignore rules for SOUL.md, USER.md, HEARTBEAT.md, IDENTITY.md, openclaw-workspace-state.json, and openclaw-schema.tmp.json.
+- Commit pushed: 2fc09a8 Ignore OpenClaw runtime workspace files.
+- Safe rule remains: local agent may read repo files, but write/commit/push should still be done by PowerShell after human review.
