@@ -28,3 +28,16 @@
 - Verified persistence by checking mcp-memory.jsonl directly.
 - Known issue: local agent may still call extra tools or ignore reply format.
 - Safe rule remains: 1 prompt = 1 tool = 1 action, then verify real file or git state.
+
+---
+## 2026-07-10 - Use Case 1.4 Full Safe Workflow Dry Run Checkpoint
+- Repo status verified by PowerShell.
+- Branch: main.
+- Working tree: clean.
+- Latest commit verified: 6ff6cf6 Document Memory MCP JSONL persistence checkpoint.
+- progress.md verified by reading the real repository file directly.
+- Memory JSONL persistence verified by reading E:\Ai-Project\.forge\memory\mcp-memory.jsonl directly.
+- Memory file contains project checkpoints for filesystem MCP, memory MCP, git MCP, and JSONL persistence test.
+- Issue found: local agent read/write tools still resolve paths under C:\Users\YiCD\.openclaw\workspace instead of the real ADW-Forge repo.
+- Safety decision: do not allow local agent write/create/commit actions until filesystem routing is fixed or verified.
+- Continue safe workflow using PowerShell for real repo verification and Git operations.
