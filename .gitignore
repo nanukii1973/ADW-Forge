@@ -35,3 +35,11 @@ experiments/tmp/
 # Local AI / generated cache
 .cache/
 tmp/
+
+# OpenClaw runtime / bootstrap files
+SOUL.md
+USER.md
+HEARTBEAT.md
+IDENTITY.md
+openclaw-workspace-state.json
+openclaw-schema.tmp.json
