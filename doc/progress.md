@@ -16,3 +16,15 @@
 - Step 3 filesystem__read_file passed.
 - Step 4 filesystem__write_file tested, but newline escaping required review before commit.
 - Confirmed safe workflow pattern: test in NEW SESSION, commit only after review.
+
+---
+## 2026-07-10 - Memory MCP JSONL Persistence Checkpoint
+- Memory MCP persistence fixed by switching memory store to JSONL format.
+- MEMORY_FILE_PATH now points to E:\Ai-Project\.forge\memory\mcp-memory.jsonl.
+- Existing memory checkpoints migrated into JSONL lines.
+- memory__read_graph passed.
+- memory__create_entities passed.
+- memory__search_nodes passed.
+- Verified persistence by checking mcp-memory.jsonl directly.
+- Known issue: local agent may still call extra tools or ignore reply format.
+- Safe rule remains: 1 prompt = 1 tool = 1 action, then verify real file or git state.
