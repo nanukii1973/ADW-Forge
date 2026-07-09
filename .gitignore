@@ -1,0 +1,37 @@
+﻿# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node / packages
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env / secrets
+.env
+*.env
+*.key
+*.pem
+*.token
+
+# Logs
+*.log
+logs/
+
+# Local runtime workspace
+workspace/
+
+# Experiments output
+experiments/output/
+experiments/tmp/
+
+# Local AI / generated cache
+.cache/
+tmp/
