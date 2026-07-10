@@ -61,3 +61,18 @@
 - Issue remains: local agent still called an extra read tool beyond the prompt.
 - Agent guessed a non-existent file path: git_mcp_checkpoints.txt.
 - Safety decision unchanged: allow local agent read-only tests, but keep write, commit, and push in PowerShell with human review.
+
+---
+## 2026-07-10 - Read-only Tool Policy Checkpoint
+- Tool policy tightened for ollama/qwen3:8b.
+- Write/edit/exec tools were denied.
+- Session/subagent tools were denied.
+- Playwright browser tools were denied.
+- Git write/change tools were denied: add, commit, reset, checkout, and create_branch.
+- Memory write/change tools were denied.
+- Remaining tools are mostly read-only: read, filesystem read/list/search/info, and git status/log/diff/show/branch.
+- New Dashboard session verified that dangerous tools no longer appear in the available tool list.
+- Read-only test successfully read doc/progress.md from the real ADW-Forge repository.
+- Repo remained clean after the read-only test.
+- Issue remains: local agent may still call extra read-only tools beyond the prompt.
+- Safety decision: allow read-only repo inspection by local agent, but keep all write, memory-write, and git history changes in PowerShell with human review.
